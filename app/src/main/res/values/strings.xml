@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator by Shashi</string>
+    <string name="intro">Hello, this basic calculator designed by Shashi Singh</string>
+    <string name="entryHint">Enter your expression here</string>
+    <string name="exp">Expression</string>
+    <string name="res">Result</string>
+    <string name="Submit">Submit</string>
+    <string name="Reset">Reset</string>
+</resources>
