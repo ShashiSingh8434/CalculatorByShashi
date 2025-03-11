@@ -2,100 +2,158 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="10sp"
+    android:background="#F5F5F5"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="cursive"
-        android:paddingTop="10sp"
-        android:text="@string/intro"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+    <!-- Display Area -->
+
+    <!-- Grid Layout for Calculator Buttons -->
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="77dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="104dp"
-        android:gravity="center"
-        android:text="@string/exp"
-        android:textAlignment="center"
-        android:textSize="12sp"
+        android:id="@+id/inputView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="124dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:gravity="center_vertical|end"
+        android:padding="12dp"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="77dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="32dp"
-        android:gravity="center"
-        android:text="@string/res"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/resultView"
-        android:layout_width="236dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:gravity="center"
+        android:layout_marginTop="52dp"
+        android:background="#E0E0E0"
+        android:elevation="4dp"
+        android:gravity="center_vertical|end"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputView" />
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:columnCount="4"
+        android:foregroundGravity="center"
+        android:rowCount="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/inputView"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultView"
+        app:layout_constraintVertical_bias="0.948">
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="408dp"
-        android:text="@string/Submit"
+
+        <Button
+            android:id="@+id/num1"
+            style="@style/CalcButton"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/num2"
+            style="@style/CalcButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/num3"
+            style="@style/CalcButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/removeAll"
+            style="@style/OperatorButton"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/num4"
+            style="@style/CalcButton"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/num5"
+            style="@style/CalcButton"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/num6"
+            style="@style/CalcButton"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/add"
+            style="@style/OperatorButton"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/num7"
+            style="@style/CalcButton"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/num8"
+            style="@style/CalcButton"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/num9"
+            style="@style/CalcButton"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/subtract"
+            style="@style/OperatorButton"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/num0"
+            style="@style/CalcButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/div"
+            style="@style/OperatorButton"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/mul"
+            style="@style/OperatorButton"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/EqualsButton"
+            android:text="=" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="411dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Made by Shashi Singh"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/inputView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit"
-        app:layout_constraintVertical_bias="0.139" />
-
-    <EditText
-        android:id="@+id/inputView"
-        android:layout_width="236dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="104dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/entryHint"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
 </androidx.constraintlayout.widget.ConstraintLayout>
