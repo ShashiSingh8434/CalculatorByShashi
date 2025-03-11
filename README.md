@@ -1,7 +1,10 @@
 # Calculator App
 
 This is a simple calculator app created for practice purposes. The app performs basic arithmetic operations like addition, subtraction, multiplication, and division.
+## Try the Calculator App Online!
+[Click here to use the app on Appetize.io]([https://appetize.io/app/your-app-id](https://appetize.io/app/b_4f6taejrguflrqqiw4o4m2il3a))
 
+## Screenshot
 <img src="https://github.com/user-attachments/assets/f293ac66-9019-4eec-9623-f92007a37e6e" width="300">
 
 
