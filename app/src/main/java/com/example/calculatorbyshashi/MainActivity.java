@@ -25,26 +25,6 @@ public class MainActivity extends AppCompatActivity {
             index[i] = expression.indexOf(sample[i]);
         }
 
-//        if(index[3]!=(-1)){
-//            output[0] = expression.substring(0,index[3]);
-//            output[1] = "/";
-//            output[2] = expression.substring(index[3]+1);
-//        } else if (index[2]!=(-1)) {
-//            output[0] = expression.substring(0,index[2]);
-//            output[1] = "*";
-//            output[2] = expression.substring(index[2]+1);
-//        } else if (index[1]!=(-1)) {
-//            output[0] = expression.substring(0,index[1]);
-//            output[1] = "-";
-//            output[2] = expression.substring(index[1]+1);
-//        } else if (index[0]!=(-1)) {
-//            output[0] = expression.substring(0,index[0]);
-//            output[1] = "+";
-//            output[2] = expression.substring(index[0]+1);
-//        }else{
-//            System.out.println("Invalid");
-//        }
-
         if (index[1]!=(-1)) {
             output[0] = expression.substring(0,index[1]);
             output[1] = "-";
